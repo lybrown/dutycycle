@@ -22,6 +22,7 @@ loop
     tay
     add #30
     sta HPOSP0
+    tya
     stx AUDF1
     sta AUDF3
     sta STIMER
