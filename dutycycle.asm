@@ -1,22 +1,22 @@
     icl 'hardware.asm'
     org $2000
 period
-    dta 180
+    dta 80
 duty
-    dta 180
+    dta 80
 main
     sei
     mva #0 NMIEN
-    mva #$F COLPM0
-    mva #$1 GRAFP0
     sta AUDCTL
     mva #3 SKCTL
     mva #4 AUDCTL
-    mva #$A8 AUDC1
     sta STIMER
+    mva #$A8 AUDC1
     mva #$A0 AUDC3
+    mva #$F COLPM0
+    mva #$1 GRAFP0
 loop
-    :3 jsr waitframe
+    :9 jsr waitframe
     ldx period
     lda duty
     tay

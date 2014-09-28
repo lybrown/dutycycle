@@ -1,3 +1,5 @@
+sweep.run:
+sweep.obx: hardware.asm
 dutycycle.run:
 dutycycle.obx: hardware.asm
 
