@@ -1,3 +1,5 @@
+paddle.run:
+paddle.obx: hardware.asm
 sweep.run:
 sweep.obx: hardware.asm
 dutycycle.run:
